@@ -11,6 +11,7 @@ class MyCheckBox extends StatefulWidget {
   final String text;
 
   @override
+  // ignore: library_private_types_in_public_api
   _MyCheckBoxState createState() => _MyCheckBoxState();
 }
 
@@ -22,8 +23,8 @@ class _MyCheckBoxState extends State<MyCheckBox> {
     return Row(
       children: [
         Checkbox(
-          activeColor: kPrimaryColor,
-          checkColor: kSecondaryColor,
+          activeColor: kTertiary2,
+          checkColor: kTertiary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
           ),
