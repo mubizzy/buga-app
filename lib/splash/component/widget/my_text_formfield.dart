@@ -11,7 +11,7 @@ class MyTextFormField extends StatelessWidget {
     required this.inputType,
     required this.inputAction,
     required this.focusNode,
-    // required this.validator,
+    required this.validator,
   }) : super(key: key);
 
   final String hint;
@@ -20,7 +20,7 @@ class MyTextFormField extends StatelessWidget {
   final TextInputType inputType;
   final TextInputAction inputAction;
   final FocusNode focusNode;
-  // final String? Function(String?) validator;
+  final String? Function(String?) validator;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class MyTextFormField extends StatelessWidget {
         keyboardType: inputType,
         textInputAction: inputAction,
         focusNode: focusNode,
-        // validator: validator,
+        validator: validator,
         decoration: InputDecoration(
           filled: true,
           fillColor: fillColor,
