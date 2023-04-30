@@ -4,6 +4,8 @@ import 'config.dart';
 const Color kPrimaryColor = Color(0xFF000000);
 const Color kSecondaryColor = Color(0xff573353);
 const Color kScaffoldBackground = Color(0xFF000000);
+const Color kTertiary = Color(0xFFE57373);
+const Color kTertiary2 = Color(0xFFFFFFFF);
 
 final kTitle = TextStyle(
     fontFamily: 'WorkSans',
@@ -43,3 +45,8 @@ final kInputHintStyle = kBodyText2.copyWith(
   fontWeight: FontWeight.normal,
   color: kSecondaryColor.withOpacity(0.5),
 );
+
+final kBodyText5 = TextStyle(
+    color: kTertiary,
+    fontSize: SizeConfig.blockSizeH! * 3.8,
+    fontWeight: FontWeight.normal);
