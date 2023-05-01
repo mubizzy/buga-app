@@ -1,6 +1,5 @@
-// import 'package:buga_app/screens/screen_boarding.dart';
 import 'package:buga_app/screens/screenboarding.dart';
-// import 'package:buga_app/screens/splashcontent.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
