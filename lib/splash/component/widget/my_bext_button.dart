@@ -5,15 +5,11 @@ import '../body.dart';
 class NewButton extends StatelessWidget {
   const NewButton({
     super.key,
-    // required this.fem,
-    // required this.ffem,
     required this.buttonName,
     required this.onPressed,
     required this.bgColor,
   });
 
-  // final double fem;
-  // final double ffem;
   final String buttonName;
   final VoidCallback onPressed;
   final Color bgColor;
