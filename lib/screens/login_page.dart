@@ -4,6 +4,8 @@ import '../config.dart';
 import '../constant.dart';
 import '../splash/component/widget/exports.dart';
 import '../validation.dart';
+import 'forget_password.dart';
+import 'sign_up_page.dart';
 // import 'login_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -90,6 +92,32 @@ class _SignUpPageState extends State<LoginPage> {
                           focusNode: _signUpFocusNodes[2],
                           validator: passwordValidator,
                         ),
+                        Row(
+                          children: [
+                            Expanded(
+                                flex: 1,
+                                child: MyCheckBox(text: "Remember me")),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 10),
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              ForgotPasswordPage()));
+                                },
+                                child: Text(
+                                  'Forgot Password?',
+                                  style: kBodyText5.copyWith(
+                                    decoration: TextDecoration.underline,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                         SizedBox(
                           height: height * 4,
                         ),
@@ -101,17 +129,17 @@ class _SignUpPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      'Already have an account? ',
-                      style: kBodyText3,
-                    ),
-                    // const SmallTextButton(
-                    //   buttonText: "Log In",
-                    //   page: (),
-                    // )
+                    Text("Don't have an account? "),
+                    SmallTextButton(
+                      buttonText: 'Sign up',
+                      page: SignUpPage(),
+                    )
                   ],
                 ),
                 SizedBox(

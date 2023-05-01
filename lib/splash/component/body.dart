@@ -53,10 +53,6 @@ class _BodyState extends State<Body> {
   }
 }
 
-// dotIndicator(int index) {}
-// double baseWidth = 375;
-// double fem = MediaQuery.of(context as BuildContext).size.width / baseWidth;
-// double ffem = fem * 0.97;
 int currentPage = 0;
 
 PageController _pageController = PageController(initialPage: 0);
