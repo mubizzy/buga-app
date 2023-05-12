@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../config.dart';
 import '../constant.dart';
+import '../splash/component/widget/better_button.dart';
 import '../splash/component/widget/exports.dart';
 import '../validation.dart';
 import 'login_page.dart';
+import 'mail_message.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -64,7 +66,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   height: height * 4,
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 32),
                   child: Form(
                     key: _signUpKey,
                     child: Column(
@@ -100,14 +102,24 @@ class _SignUpPageState extends State<SignUpPage> {
                           validator: passwordValidator,
                         ),
                         const MyCheckBox(
-                            text:
-                                "I agree to the terms of service and privacy"),
+                            text: "I agree to the terms of service "),
                         SizedBox(
-                          height: height * 4,
+                          height: height * 2,
                         ),
-                        NewButton(
+                        BetterButton(
                             buttonName: "Sign Up",
-                            onPressed: onSubmit,
+                            // onPressed: onSubmit,
+                            onPressed: () {
+                              if (_signUpKey.currentState!.validate()) {
+                                _signUpKey.currentState!.save();
+                                // if all are valid then go to success screen
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const MailMessage()));
+                              }
+                            },
                             bgColor: const Color(0xff003049))
                       ],
                     ),
@@ -181,3 +193,7 @@ class _SignUpPageState extends State<SignUpPage> {
     );
   }
 }
+// Navigator.push(
+                              //     context,
+                              //     MaterialPageRoute(
+                              //         builder: (context) => ProfilePage()));
