@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../config.dart';
 import '../constant.dart';
+import '../splash/component/widget/better_button.dart';
 import '../splash/component/widget/exports.dart';
 import '../validation.dart';
 import 'forget_password.dart';
@@ -94,7 +95,7 @@ class _SignUpPageState extends State<LoginPage> {
                         ),
                         Row(
                           children: [
-                            Expanded(
+                            const Expanded(
                                 flex: 1,
                                 child: MyCheckBox(text: "Remember me")),
                             Padding(
@@ -106,7 +107,7 @@ class _SignUpPageState extends State<LoginPage> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              ForgotPasswordPage()));
+                                              const ForgotPasswordPage()));
                                 },
                                 child: Text(
                                   'Forgot Password?',
@@ -121,7 +122,7 @@ class _SignUpPageState extends State<LoginPage> {
                         SizedBox(
                           height: height * 4,
                         ),
-                        NewButton(
+                        BetterButton(
                             buttonName: "Log In ",
                             onPressed: onSubmit,
                             bgColor: const Color(0xff003049))
@@ -129,12 +130,12 @@ class _SignUpPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Text("Don't have an account? "),
                     SmallTextButton(
                       buttonText: 'Sign up',
