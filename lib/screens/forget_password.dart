@@ -8,11 +8,12 @@ class ForgotPasswordPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white70,
-          title: Text("cccccccccc"),
+          elevation: 0,
+          title: const Text("c"),
         ),
         body: SafeArea(
             child: Column(
-          children: [Text("data")],
+          children: const [Text("data")],
         )));
   }
 }
