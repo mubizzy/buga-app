@@ -56,7 +56,7 @@ class _MyPasswordFieldState extends State<MyPasswordField> {
                 });
               },
               child: Image.asset(
-                'assets/images/icon-left.png',
+                'assets/images/icon-left2.png',
                 width: 20,
                 height: 20,
               ),
@@ -90,10 +90,3 @@ class _MyPasswordFieldState extends State<MyPasswordField> {
     );
   }
 }
-
-// child: Text(
-//                 'Show',
-//                 style: kBodyText3.copyWith(
-//                   decoration: TextDecoration.underline,
-//                 ),
-//               ),
