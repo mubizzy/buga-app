@@ -1,7 +1,6 @@
 class OnBoarding {
   final String title;
   final String image;
-
   final String text;
 
   OnBoarding({

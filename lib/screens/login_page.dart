@@ -1,3 +1,4 @@
+import 'package:buga_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../config.dart';
@@ -123,8 +124,19 @@ class _SignUpPageState extends State<LoginPage> {
                           height: height * 4,
                         ),
                         BetterButton(
-                            buttonName: "Log In ",
-                            onPressed: onSubmit,
+                            buttonName: "Sign Up",
+                            // onPressed: onSubmit,
+                            onPressed: () {
+                              if (_signUpKey.currentState!.validate()) {
+                                _signUpKey.currentState!.save();
+                                // if all are valid then go to success screen
+                                Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const HomeScreen()));
+                              }
+                            },
                             bgColor: const Color(0xff003049))
                       ],
                     ),
