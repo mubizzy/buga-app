@@ -1,9 +1,11 @@
 import 'package:buga_app/screens/quote_page.dart';
+import 'package:buga_app/splash/quote2.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_application_demo/profile.dart';
 
 import '../home/home_widget.dart/export.dart';
 import '../screens/sign_up_page.dart';
+import '../splash/quote3.dart';
 
 class NewHome2 extends StatefulWidget {
   const NewHome2({super.key});
@@ -107,8 +109,8 @@ class NewWidget extends StatelessWidget {
     return TextButton(
       // frame161MQ7 (8:6929)
       onPressed: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const QuotePage()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => OrderForm2()));
       },
       style: TextButton.styleFrom(
         padding: EdgeInsets.zero,
