@@ -1,3 +1,4 @@
+import 'package:buga_app/splash/component/verification_message2.dart';
 import 'package:flutter/material.dart';
 
 import 'widget/better_button.dart';
@@ -72,7 +73,12 @@ class _SceneState extends State<MailBody> {
                   children: [
                     BetterButton(
                       buttonName: "Check Your Mail",
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Verification()));
+                      },
                       bgColor: const Color(0xff003049),
                     ),
                     RichText(
