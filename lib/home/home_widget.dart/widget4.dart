@@ -24,7 +24,7 @@ class NewWidget4 extends StatelessWidget {
         width: double.infinity,
         height: 96 * fem,
         decoration: BoxDecoration(
-          color: Color(0xfff6f6f6),
+          color: const Color(0xfff6f6f6),
           borderRadius: BorderRadius.circular(8 * fem),
         ),
         child: Row(
@@ -42,7 +42,7 @@ class NewWidget4 extends StatelessWidget {
                 height: 40 * fem,
               ),
             ),
-            Container(
+            SizedBox(
               // frame1591NB (8:6931)
               width: 271 * fem,
               height: double.infinity,
@@ -68,11 +68,11 @@ class NewWidget4 extends StatelessWidget {
                               fontSize: 16 * ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.5 * ffem / fem,
-                              color: Color(0xff212121),
+                              color: const Color(0xff212121),
                             ),
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // iconleftHDD (8:6934)
                           // getaquoteDUF (8:6933)
 
@@ -101,7 +101,7 @@ class NewWidget4 extends StatelessWidget {
                         fontSize: 10 * ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.6 * ffem / fem,
-                        color: Color(0xff333333),
+                        color: const Color(0xff333333),
                       ),
                     ),
                   ),
