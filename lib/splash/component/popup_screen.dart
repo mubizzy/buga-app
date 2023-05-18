@@ -7,7 +7,10 @@ import 'package:flutter/material.dart';
 import 'widget/better_button2.dart';
 
 class PopUpScreen extends StatefulWidget {
+  const PopUpScreen({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _PopUpScreenState createState() => _PopUpScreenState();
 }
 
@@ -18,7 +21,7 @@ class _PopUpScreenState extends State<PopUpScreen> {
   void initState() {
     super.initState();
     // Simulate loading delay
-    Future.delayed(Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 5), () {
       setState(() {
         isLoading = false;
       });
@@ -35,7 +38,7 @@ class _PopUpScreenState extends State<PopUpScreen> {
           ? Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -50,7 +53,7 @@ class _PopUpScreenState extends State<PopUpScreen> {
                       fontSize: 16 * ffem,
                       fontWeight: FontWeight.w500,
                       height: 1.5 * ffem / fem,
-                      color: Color(0xff212121),
+                      color: const Color(0xff212121),
                     ),
                   ),
                 ),
@@ -67,22 +70,22 @@ class _PopUpScreenState extends State<PopUpScreen> {
                       fontSize: 12 * ffem,
                       fontWeight: FontWeight.w400,
                       height: 1.3333333333 * ffem / fem,
-                      color: Color(0xff333333),
+                      color: const Color(0xff333333),
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
+                const Padding(
+                  padding: EdgeInsets.all(16.0),
                   child: CircularProgressIndicator(),
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 BetterButton2(
                     buttonName: "Cancel Transaction",
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    bgColor: Color(0xff003049)),
-                SizedBox(height: 40.0),
+                    bgColor: const Color(0xff003049)),
+                const SizedBox(height: 40.0),
               ],
             )
           : Stack(
@@ -91,10 +94,12 @@ class _PopUpScreenState extends State<PopUpScreen> {
                 Column(mainAxisSize: MainAxisSize.min, children: [
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => NewHome3()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const NewHome3()));
                     },
-                    child: Align(
+                    child: const Align(
                       alignment: Alignment.topRight,
                       child: Icon(Icons.close, color: Colors.black),
                     ),
@@ -107,10 +112,10 @@ class _PopUpScreenState extends State<PopUpScreen> {
                       fontSize: 16 * ffem,
                       fontWeight: FontWeight.w500,
                       height: 1.5 * ffem / fem,
-                      color: Color(0xff212121),
+                      color: const Color(0xff212121),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Text(
@@ -121,10 +126,10 @@ class _PopUpScreenState extends State<PopUpScreen> {
                       fontSize: 32 * ffem,
                       fontWeight: FontWeight.w700,
                       height: 1.5 * ffem / fem,
-                      color: Color(0xff212121),
+                      color: const Color(0xff212121),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
@@ -139,23 +144,23 @@ class _PopUpScreenState extends State<PopUpScreen> {
                         fontSize: 12 * ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.3333333333 * ffem / fem,
-                        color: Color(0xff333333),
+                        color: const Color(0xff333333),
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
-                  BetterButton(
-                      buttonName: 'Book Shipment',
+                  BetterButton2(
+                      buttonName: "Book Shipment",
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => NewHome3()));
+                                builder: (context) => const NewHome3()));
                       },
                       bgColor: const Color(0xff003049)),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                 ])
