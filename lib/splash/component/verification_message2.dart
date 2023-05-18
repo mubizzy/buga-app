@@ -20,6 +20,7 @@ class _OrderForm2State extends State<Verification> {
           // leading: const BackButton(
           //   color: Colors.black, // <-- SEE HERE
           // ),
+          automaticallyImplyLeading: false,
           backgroundColor: Colors.transparent,
           centerTitle: true,
           elevation: 0,
