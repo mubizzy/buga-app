@@ -60,7 +60,7 @@ class NewWidget5 extends StatelessWidget {
                         Container(
                           // getaquoteDUF (8:6933)
                           margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 143 * fem, 0 * fem),
+                              0 * fem, 0 * fem, 142 * fem, 0 * fem),
                           child: Text(
                             'Add A Wallet',
                             style: TextStyle(
@@ -68,11 +68,11 @@ class NewWidget5 extends StatelessWidget {
                               fontSize: 16 * ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.5 * ffem / fem,
-                              color: Color(0xff212121),
+                              color: const Color(0xff212121),
                             ),
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // iconleftHDD (8:6934)
                           // getaquoteDUF (8:6933)
 
@@ -101,7 +101,7 @@ class NewWidget5 extends StatelessWidget {
                         fontSize: 10 * ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.6 * ffem / fem,
-                        color: Color(0xff333333),
+                        color: const Color(0xff333333),
                       ),
                     ),
                   ),
