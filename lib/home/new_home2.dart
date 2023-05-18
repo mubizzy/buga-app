@@ -1,10 +1,8 @@
-import 'package:buga_app/screens/quote_page.dart';
-import 'package:buga_app/splash/quote2.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_application_demo/profile.dart';
 
 import '../home/home_widget.dart/export.dart';
-import '../screens/sign_up_page.dart';
+
 import '../splash/quote3.dart';
 
 class NewHome2 extends StatefulWidget {
@@ -42,11 +40,11 @@ class _NewHome2State extends State<NewHome2> {
                             8 * fem, 12 * fem, 8 * fem, 12 * fem),
                         child: TextFormField(
                             decoration: InputDecoration(
-                                prefixIcon: Icon(Icons.search_outlined,
+                                prefixIcon: const Icon(Icons.search_outlined,
                                     color: Color(0xff212121)),
                                 hintText: "Enter tracking number",
                                 border: OutlineInputBorder(
-                                    borderSide: BorderSide(),
+                                    borderSide: const BorderSide(),
                                     borderRadius: BorderRadius.circular(5)))),
                       ),
                       Padding(
@@ -58,13 +56,13 @@ class _NewHome2State extends State<NewHome2> {
                             fontSize: 18 * ffem,
                             fontWeight: FontWeight.w600,
                             height: 1.7777777778 * ffem / fem,
-                            color: Color(0xff212121),
+                            color: const Color(0xff212121),
                           ),
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
 
@@ -80,13 +78,13 @@ class _NewHome2State extends State<NewHome2> {
                                 // crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   NewWidget(fem: fem, ffem: ffem),
-                                  SizedBox(height: 12),
+                                  const SizedBox(height: 12),
                                   NewWidget2(fem: fem, ffem: ffem),
-                                  SizedBox(height: 12),
+                                  const SizedBox(height: 12),
                                   NewWidget3(fem: fem, ffem: ffem),
-                                  SizedBox(height: 12),
+                                  const SizedBox(height: 12),
                                   NewWidget4(fem: fem, ffem: ffem),
-                                  SizedBox(height: 12),
+                                  const SizedBox(height: 12),
                                   NewWidget5(fem: fem, ffem: ffem),
                                 ]),
                           )))
@@ -109,8 +107,8 @@ class NewWidget extends StatelessWidget {
     return TextButton(
       // frame161MQ7 (8:6929)
       onPressed: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => OrderForm2()));
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const OrderForm2()));
       },
       style: TextButton.styleFrom(
         padding: EdgeInsets.zero,
@@ -121,7 +119,7 @@ class NewWidget extends StatelessWidget {
         width: double.infinity,
         height: 96 * fem,
         decoration: BoxDecoration(
-          color: Color(0xfff6f6f6),
+          color: const Color(0xfff6f6f6),
           borderRadius: BorderRadius.circular(8 * fem),
         ),
         child: Row(
@@ -139,7 +137,7 @@ class NewWidget extends StatelessWidget {
                 height: 40 * fem,
               ),
             ),
-            Container(
+            SizedBox(
               // frame1591NB (8:6931)
               width: 271 * fem,
               height: double.infinity,
@@ -165,11 +163,11 @@ class NewWidget extends StatelessWidget {
                               fontSize: 16 * ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.5 * ffem / fem,
-                              color: Color(0xff212121),
+                              color: const Color(0xff212121),
                             ),
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // iconleftHDD (8:6934)
                           // getaquoteDUF (8:6933)
 
@@ -198,7 +196,7 @@ class NewWidget extends StatelessWidget {
                         fontSize: 10 * ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.6 * ffem / fem,
-                        color: Color(0xff333333),
+                        color: const Color(0xff333333),
                       ),
                     ),
                   ),
