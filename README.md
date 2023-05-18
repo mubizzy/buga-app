@@ -1,8 +1,10 @@
-# buga_app
+## buga_app
 
 A new Flutter project.
 
-## Getting Started
+### Screenshots
+
+<img src="Capture6.PNG"/>
 
 This project is a starting point for a Flutter application.
 
