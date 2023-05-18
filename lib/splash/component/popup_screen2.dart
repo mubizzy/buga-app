@@ -2,7 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class PopUpScreen2 extends StatefulWidget {
+  const PopUpScreen2({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _PopUpScreenState createState() => _PopUpScreenState();
 }
 
@@ -13,7 +16,7 @@ class _PopUpScreenState extends State<PopUpScreen2> {
   void initState() {
     super.initState();
     // Simulate loading delay
-    Future.delayed(Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 5), () {
       setState(() {
         isLoading = false;
       });
@@ -24,23 +27,22 @@ class _PopUpScreenState extends State<PopUpScreen2> {
   Widget build(BuildContext context) {
     double baseWidth = 375;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
     return Dialog(
         child: isLoading
             ? Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text("Transaction in progress"),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  const Text("Transaction in progress"),
+                  const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: CircularProgressIndicator(),
                   ),
-                  SizedBox(height: 16.0),
-                  Text(
+                  const SizedBox(height: 16.0),
+                  const Text(
                       "Kindly wait a few minutes while your payment is being processed..."),
-                  SizedBox(height: 16.0),
+                  const SizedBox(height: 16.0),
                   ElevatedButton(
-                    child: Text('Cancel Transaction'),
+                    child: const Text('Cancel Transaction'),
                     onPressed: () {
                       Navigator.pop(context);
                     },

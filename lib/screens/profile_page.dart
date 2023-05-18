@@ -1,8 +1,12 @@
 import 'dart:io';
 
+import 'package:buga_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_application_demo/profile_pic.dart';
 import 'package:image_picker/image_picker.dart';
+
+import '../home/new_home3.dart';
+import '../splash/component/widget/better_button.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -262,10 +266,23 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
                 SizedBox(height: 16.0),
 
-                ElevatedButton(
-                  child: Text('Sign Up'),
-                  onPressed: _submitForm,
-                ),
+                BetterButton(
+                    buttonName: "Continue",
+                    // onPressed: onSubmit,
+
+                    onPressed: () {
+                      // if all are valid then go to success screen
+                      if (_formKey.currentState!.validate()) {
+                        _formKey.currentState!.save();
+                        // Process the form data
+                        // e.g., Send the order details to an API
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeScreen()));
+                      }
+                    },
+                    bgColor: const Color(0xff003049)),
               ],
             ),
           ),
