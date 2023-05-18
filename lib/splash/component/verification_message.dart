@@ -1,6 +1,6 @@
 import 'package:buga_app/screens/profile_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
+// ignore: unnecessary_import
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -130,49 +130,6 @@ class Verification2 extends StatelessWidget {
                                     builder: (context) => const ProfilePage()));
                           },
                           bgColor: const Color(0xff003049),
-                        ),
-                        Container(
-                          // basebuttonPvs (11:2545)
-                          margin: EdgeInsets.fromLTRB(
-                              23 * fem, 0 * fem, 23 * fem, 0 * fem),
-                          child: TextButton(
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              padding: EdgeInsets.zero,
-                            ),
-                            child: Container(
-                              width: double.infinity,
-                              height: 48 * fem,
-                              child: Container(
-                                // basebuttonFTH (I11:2545;2:183)
-                                padding: EdgeInsets.fromLTRB(
-                                    93 * fem, 12 * fem, 104.5 * fem, 12 * fem),
-                                width: double.infinity,
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: Color(0xff003049),
-                                  borderRadius: BorderRadius.circular(4 * fem),
-                                ),
-                                child: Container(
-                                  // autogroupvbzjXfh (8cuUTmm9TTMZ9qHE5SVbzj)
-                                  padding: EdgeInsets.fromLTRB(
-                                      11.5 * fem, 0 * fem, 0 * fem, 0 * fem),
-                                  width: double.infinity,
-                                  height: double.infinity,
-                                  child: Text(
-                                    'Continue',
-                                    style: TextStyle(
-                                      fontFamily: 'Work Sans',
-                                      fontSize: 16 * ffem,
-                                      fontWeight: FontWeight.w500,
-                                      height: 1.5 * ffem / fem,
-                                      color: Color(0xfffafafa),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
                         ),
                       ],
                     ),
