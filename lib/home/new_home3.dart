@@ -42,13 +42,13 @@ class NewHome3 extends StatelessWidget {
                       fontSize: 12 * ffem,
                       fontWeight: FontWeight.w500,
                       height: 1.3333333333 * ffem / fem,
-                      color: Color(0xff212121),
+                      color: const Color(0xff212121),
                     ),
                   ),
                 ],
               ),
-              Spacer(),
-              Icon(
+              const Spacer(),
+              const Icon(
                 Icons.notifications_none,
                 size: 35,
                 color: Colors.black,
@@ -56,6 +56,6 @@ class NewHome3 extends StatelessWidget {
             ],
           ),
         ),
-        body: NewHome2());
+        body: const NewHome2());
   }
 }

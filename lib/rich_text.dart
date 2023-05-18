@@ -27,7 +27,7 @@ class Texts extends StatelessWidget {
                 fontSize: 12 * ffem,
                 fontWeight: FontWeight.w400,
                 height: 1.3333333333 * ffem / fem,
-                color: Color(0xff212121),
+                color: const Color(0xff212121),
               ),
               children: [
                 TextSpan(
@@ -40,7 +40,7 @@ class Texts extends StatelessWidget {
                     fontSize: 12 * ffem,
                     fontWeight: FontWeight.w400,
                     height: 1.3333333333 * ffem / fem,
-                    color: Color(0xffda0a0a),
+                    color: const Color(0xffda0a0a),
                   ),
                 ),
               ],
