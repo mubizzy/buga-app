@@ -4,7 +4,7 @@ A New Flutter project.
 
 ### Screenshots
 
-<img src="Capture6.PNG"/>
+<!-- <img src="Capture6.PNG"/> -->
 
 This project is a Logistics platform that includes services for both suppliers and buyers.
 
